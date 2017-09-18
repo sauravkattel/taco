@@ -1,0 +1,54 @@
+/* this is where all of your CSS styles go */
+#coat{
+  width: 200px;
+	height: 100px;
+	position: relative;
+	left: 50%;
+	top: 48%; /* for optical centering */
+  margin-top: 20%
+
+}
+.text{
+  font-family: 'Indie Flower', cursive;
+  font-size: 2em;
+}
+
+@-webkit-keyframes c_move{
+	0%,100% {top:0px; left:0px;}
+  25%, 75%{top:86px; left:21px;}
+	50% {top: 156px; left:0px;}
+}
+
+#c{
+  position: relative;
+  -webkit-animation: c_move 3s infinite linear ;
+}
+@-webkit-keyframes o_move{
+	0%, 100% {top:0px; left:0px;}
+  25%,75%{top:100px; left:-21px;}
+	50% {top: 154px; left:0px;}
+}
+#o{
+  position: relative;
+  -webkit-animation: o_move 3s infinite linear ;
+}
+@-webkit-keyframes a_move{
+	0%, 100% {top:0px; left:0px;}
+  25%, 75% {top:-20px; left:-40px;}
+	50% {top: -74px; left:0px;}
+}
+#a{
+  position: relative;
+  -webkit-animation: a_move 3s infinite linear ;
+}
+
+@-webkit-keyframes t_move{
+	0%, 100% {top:0px; left:0px;}
+  25%, 75%{top:-150px; left:-80px;}
+	50% {top: -235px; left:0px;}
+}
+#t{
+  position: relative;
+  -webkit-animation: t_move 3s infinite linear;
+  cubic-bezier:(0,.01,1,1)
+}
